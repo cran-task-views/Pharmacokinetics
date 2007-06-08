@@ -1,0 +1,110 @@
+<CRANTaskView> 
+
+<name>Pharmacokinetics</name>
+<topic>Analysis of Pharmacokinetic Data</topic>
+<maintainer>Suzette Blanchard</maintainer>
+
+<info>  
+    
+<p>
+The primary goal of pharmacokinetic (PK) data analysis is to determine the relationship between 
+the dosing regimen and the body's exposure to the drug as measured by the nonlinear concentration 
+time curve or related summaries (e.g. the area under the curve).  Base R contains nls 
+
+FIXME: Please use <tt> for highlighting code/functions (e.g. <tt>nls()</tt>) and *always*
+       use <pkg> for highlighting packages.
+
+which 
+determines the nonlinear least-squares estimates of the nonlinear model parameters and returns on 
+object of the class 'nls'. It has methods for 'coef', 'formula', 'resid', 'print', 'summary', 'AIC', 
+'fitted' and 'vcov'.
+</p>
+
+<p>Once the primary goal is achieved, the interest shifts to determining if exposure 
+differs among subpopulations based on subject specific covariates (age, size, concomitant 
+medications, kidney function) requiring a change in dose. Within the field of pharmacokinetics, 
+analyses combining data from multiple individuals to estimate the population parameters are termed 
+population PK. The non-linear mixed models framework provides a natural tool for 
+analyzing population PK data, using either frequentist or Bayesian estimation methods.  
+</p>
+
+<p>The package <pkg>nlme</pkg> fits a nonlinear mixed-effects model using the frequentist 
+approach described in Lindstrom and Bates (1990) but allowing for nested random effects
+
+FIXME: As there is no reference list on this page, please give some more publication
+       information for Lindstrom and Bates.
+
+where within-group errors are allowed to be correlated and/or have unequal variances. An
+object of class 'nlme' representing the nonlinear mixed-effects model fit is returned. 
+The results can be output using the methods 'print', 'plot', and 'summary'. The nlmeObject
+gives further details regarding the components of the nlme object and how to extract them.
+</p> 
+
+<p>The package <pkg>nlmeODE</pkg> combines the 'odesolve' and 'nlme' packages for mixed-effects 
+
+FIXME: Shouldn't <pkg>odesolve</pkg> be in the <packagelist> below then?
+
+modelling and includes the library <pkg>PKPDmodels</pkg> of PK/PD models.
+
+FIXME: Please use the term package (not library) here and below.
+</p>
+
+<p>Bayesian estimation methods for panel data are also available. These methods have been described 
+in the CRAN task view for <view>Bayesian</view> Inference.
+</p>
+
+<p>The <pkg>PKtools</pkg> package provides an interface for analysis of single dose population PK data to 
+NLME, NONMEM, and WinBUGS and returns objects of the classes 'PKNLME', 'NONMEM', and 'WinBUGS', respectively. 
+This interface facilitates the use of hybrid likelihood-based and Bayesian methods. 
+Other PKtools functions include: AICcomp which prints the AIC, AICc (small sample AIC) and the log 
+likelihood from NONMEM and NLME for each of a number of models; paramEst and indEst which print the 
+population and individual parameter estimates, respectively, based on maximum likelihood (NONMEM), 
+generalized least squares (NLME) and Bayesian estimates using MCMC (WinBUGS); HTMLtools and tex, 
+respectively, output HTML and Latex/MikTex report files of  population and individual estimates and 
+
+FIXME: I guess the format is just LaTeX and not MikTeX specific, is it?
+
+diagnostic plots for the users choice of estimation method. In addition, the diagnostic plots presented 
+in the HTMLtools and tex files can be produced individually.
+</p>
+
+<p>Graphic display is important in the analysis of pharmacokinetic data. The panel structure
+of the data is often well displayed using the <pkg>lattice</pkg> library of trellis plots. 
+The identify function reads the position of the graphics pointer and can be used to identify
+outlining data points in diagnostic plots.
+</p>
+
+<p>This is a preliminary draft of this task view. Please let me know if I have omitted any
+important information by sending email to the 
+<a href="mailto:sblanchard@coh.org?subject=Pharmacokinetics%20Task%20View">task view maintainer</a>.
+</p>
+
+<p>
+Last Update: Tue Oct 17 11:23:16 2006
+</p>
+
+</info>
+
+<packagelist>
+<pkg priority="core">lattice</pkg>
+<pkg priority="core">nlme</pkg>
+<pkg>nlmeODE</pkg>
+<pkg priority="core">PKtools</pkg>
+</packagelist>
+
+FIXME: The packages <pkg>PK</pkg> and <pkg>PKfit</pkg> should be added to the view. Probably
+       also the package <pkg>drc</pkg>.
+FIXME: I guess one could mention the MASS package in the <pkg>VR</pkg> bundle, because it
+       contains a little basic methodology such as computing LD50s from logit/probit models.
+FIXME: A package <pkg>PKPDmodels</pkg> is mentioned above, but is not in the <packagelist>. Furthermore,
+       it does not seem to be on CRAN...
+FIXME: You mention <pkg>PKtools</pkg> as a core package, but this is not available on CRAN AFAICS.
+       Only CRAN packages can be in the CRAN task view.
+
+<links>
+<a href="http://www1.imperial.ac.uk/medicine/research/researchthemes/publicandint/eph/bugs/pkbugs.html" target="_top">PKBUGS</a> 
+<a href="http://www.mrc-bsu.cam.ac.uk/bugs/" target="_top">WinBUGS</a>
+<a href="http://c255.ucsf.edu/" target="_top">NONMEM</a>
+</links>
+ 
+</CRANTaskView>
