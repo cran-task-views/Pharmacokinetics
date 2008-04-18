@@ -12,7 +12,7 @@ The primary goal of pharmacokinetic (PK) data analysis is to determine the relat
 the dosing regimen and the body's exposure to the drug as measured by the nonlinear concentration
 time curve or related summaries (e.g. the area under the curve).  Base R contains nls
 which can be used to calculate nonlinear least-squares estimates of the parameters from a PK 
-model. It returns an object of the class "<code>nls</code>" having methods <code>coef()</code>, <code>formula()</code>, 
+model. It returns an object of the class <code>"nls"</code> having methods <code>coef()</code>, <code>formula()</code>, 
 <code>resid()</code>, <code>print()</code>, <code>summary()</code>, <code>AIC()</code>, <code>fitted()</code> and 
 <code>vcov()</code>.  Four packages are available in CRAN that directly aid in PK data analysis, including; 
 the packages <pkg>PK</pkg>,<pkg>PKfit</pkg>, <pkg>nlmeODE</pkg> which incorporates <pkg>nlme</pkg> and 
@@ -51,10 +51,10 @@ PK data, using either frequentist or Bayesian estimation methods.
 <p>
 The package <pkg>nlme</pkg> fits a nonlinear mixed-effects model using the frequentist
 approach (Lindstrom and Bates, 1990) which allows for nested random effects. An object of 
-class "<code>nlme</code>" representing the nonlinear mixed-effects model fit is returned.
+class <code>"nlme"</code> representing the nonlinear mixed-effects model fit is returned.
 The results can be output using the methods <code>print()</code>, <code>plot()</code>, 
 and <code>summary()</code>. The nlmeObject gives further details regarding the components of the 
-"<code>nlme</code>" object and how to extract them. The package <pkg>nlmeODE</pkg> incorporates the <pkg>odesolve</pkg>
+<code>"nlme"</code> object and how to extract them. The package <pkg>nlmeODE</pkg> incorporates the <pkg>odesolve</pkg>
 and <pkg>nlme</pkg> along with the library of PK/PD models, <pkg>PKPDmodels</pkg>. A discussion of the 
 analysis methods for population PK using <pkg>nlme</pkg> is provided in Pinheiro and Bates (2000). 
 </p>
@@ -68,7 +68,7 @@ population PK data are described in Lunn et al.(2002).
 <p>
 The <pkg>PKtools</pkg> package provides an interface for analysis of single dose population PK data to
 <pkg>nlme</pkg> (Pinheiro and Bates, 2000), NONMEM (Beal and Sheiner, 1989), and WinBUGS (Speigelhalter et al., 2001) 
-and returns objects of the classes "<code>PKNLME</code>", "<code>NONMEM</code>", and "<code>WinBUGS</code>", 
+and returns objects of the classes <code>"PKNLME"</code>, <code>"NONMEM"</code>, and <code>"WinBUGS"</code>, 
 respectively.  This interface facilitates the use of hybrid likelihood-based and Bayesian methods.
 Other PKtools functions include: <code>AICcomp()</code> which prints the AIC, AICc (small sample AIC) and 
 the log likelihood from NONMEM and NLME for each of a number of models; <code>paramEst()</code> and <code>indEst()</code> 
