@@ -3,98 +3,159 @@
 <name>Pharmacokinetics</name>
 <topic>Analysis of Pharmacokinetic Data</topic>
 <maintainer email="sblanchard@coh.org">Suzette Blanchard</maintainer>
-<version>2008-02-15</version>
+<version>2008-04-17</version>
 
 <info>
 
 <p>
 The primary goal of pharmacokinetic (PK) data analysis is to determine the relationship between
 the dosing regimen and the body's exposure to the drug as measured by the nonlinear concentration
-time curve or related summaries (e.g. the area under the curve).  Base R contains <tt>nls()</tt>
-which determines the nonlinear least-squares estimates of the nonlinear
-model parameters and returns on object of the class <tt>"nls"</tt>.
-It has methods for <tt>coef()</tt>, <tt>formula()</tt>, <tt>resid()</tt>, <tt>print()</tt>, <tt>summary()</tt>, <tt>AIC()</tt>,
-<tt>fitted()</tt> and <tt>vcov()</tt>.
+time curve or related summaries (e.g. the area under the curve).  Base R contains nls
+which can be used to calculate nonlinear least-squares estimates of the parameters from a PK 
+model. It returns an object of the class "<code>nls</code>" having methods <code>coef()</code>, <code>formula()</code>, 
+<code>resid()</code>, <code>print()</code>, <code>summary()</code>, <code>AIC()</code>, <code>fitted()</code> and 
+<code>vcov()</code>.  Four packages are available in CRAN that directly aid in PK data analysis, including; 
+the packages <pkg>PK</pkg>,<pkg>PKfit</pkg>, <pkg>nlmeODE</pkg> which incorporates <pkg>nlme</pkg> and 
+<pkg>odesolve</pkg>, and the package <pkg>PKtools</pkg>. While <pkg>PK</pkg> provides basic pharmacokinetics 
+functions which implement non-compartmental analysis methods, the latter three packages focus on modeling 
+methods. In addition, this task view includes a discussion of a few related packages including the package 
+<pkg>lattice</pkg> for trellis graphics, and the package MASS from the bundle <pkg>VR</pkg> 
+and the package <pkg>drc</pkg> that aid in the analysis of dose response curves.  
 </p>
 
-<p>Once the primary goal is achieved, the interest shifts to determining if exposure
-differs among subpopulations based on subject specific covariates (age, size, concomitant
-medications, kidney function) requiring a change in dose. Within the field of pharmacokinetics,
+<p>
+<pkg>PK</pkg> is a basic pharmacokinetics package providing functions to aid in non-compartmental analysis 
+(Gibaldi and Perrier,1982) of PK data. This package includes a function, <code>AUC()</code>, to calculate area 
+under the curve, and the area under the first moment curve and two new functions <code>auc.ssd()</code> and <code>eqv.sdd()</code> for 
+estimating and comparing AUCs in the case of serial sampling. It also includes functions for half-life estimation 
+for a biexponential model, <code>biexp()</code>, and a two phase linear regression, <code>lee()</code> 
+as well as an associated plot function, <code>plot.halflife()</code>.
+</p>
+
+<p>
+The package <pkg>PKfit</pkg> is a nonlinear regression program designed for the analysis of pharmacokinetic 
+data. This package includes fitting and simulation functions for a large list of PK models including both 
+compartment models and other nonlinear models with iv, bolus, extravascular, and oral single dose absorption, 
+with and without a lag.
+</p>
+
+<p>
+When analyzing PK data once the primary goal of estimating exposure is achieved, the interest shifts 
+to determining if exposure differs among subpopulations based on subject specific covariates (age, size, 
+concomitant medications, kidney function) requiring a change in dose. Within the field of pharmacokinetics,
 analyses combining data from multiple individuals to estimate the population parameters are termed
-population PK. The non-linear mixed models framework provides a natural tool for
-analyzing population PK data, using either frequentist or Bayesian estimation methods.
+population PK. The non-linear mixed models framework provides a natural tool for analyzing population 
+PK data, using either frequentist or Bayesian estimation methods.
 </p>
 
-<p>The package <pkg>nlme</pkg> fits a nonlinear mixed-effects model using the frequentist
-approach described in Lindstrom and Bates (1990, Biometrics 46, 673-87)
-but allowing for nested random effects
-where within-group errors are allowed to be correlated and/or have unequal variances. An
-object of class <tt>"nlme"</tt> representing the nonlinear mixed-effects model fit is returned.
-The results can be output using the methods <tt>print()</tt>, <tt>plot()</tt>, and <tt>summary()</tt>.
-The nlme object gives further details regarding the components of the nlme object and how to extract them.
+<p>
+The package <pkg>nlme</pkg> fits a nonlinear mixed-effects model using the frequentist
+approach (Lindstrom and Bates, 1990) which allows for nested random effects. An object of 
+class "<code>nlme</code>" representing the nonlinear mixed-effects model fit is returned.
+The results can be output using the methods <code>print()</code>, <code>plot()</code>, 
+and <code>summary()</code>. The nlmeObject gives further details regarding the components of the 
+"<code>nlme</code>" object and how to extract them. The package <pkg>nlmeODE</pkg> incorporates the <pkg>odesolve</pkg>
+and <pkg>nlme</pkg> along with the library of PK/PD models, <pkg>PKPDmodels</pkg>. A discussion of the 
+analysis methods for population PK using <pkg>nlme</pkg> is provided in Pinheiro and Bates (2000). 
 </p>
 
-<p>The package <pkg>nlmeODE</pkg> combines the <pkg>odesolve</pkg> and
-<pkg>nlme</pkg> packages for mixed-effects
-modelling and includes a list of PK/PD models in <tt>?PKPDmodels</tt>.
+<p>
+Bayesian estimation methods for panel data are also available. These methods have been described 
+in the CRAN task view for <view>Bayesian</view> Inference.  Bayesian analysis methods for 
+population PK data are described in Lunn et al.(2002). 
 </p>
 
-<p>Bayesian estimation methods for panel data are also available. These methods have been described
-in the CRAN task view for <view>Bayesian</view> Inference.
-</p>
-
-<p>The <pkg>PKtools</pkg> package provides an interface for analysis of single dose population PK data to
-<pkg>nlme</pkg>, <a href="http://c255.ucsf.edu/" target="_top">NONMEM</a>, and
-<a href="http://www.mrc-bsu.cam.ac.uk/bugs/" target="_top">WinBUGS</a> and returns objects of the classes
-<tt>"PKNLME"</tt>, <tt>"NONMEM"</tt>, and <tt>"WinBUGS"</tt>, respectively.
-This interface facilitates the use of hybrid likelihood-based and Bayesian methods.
-Other <pkg>PKtools</pkg> functions include: <tt>AICcomp()</tt> which prints the AIC,
-AICc (small sample AIC) and the log likelihood from NONMEM and <pkg>nlme</pkg> for each of a number of models;
-<tt>paramEst()</tt> and <tt>indEst()</tt> which print the
-population and individual parameter estimates, respectively, based on maximum likelihood (NONMEM),
-generalized least squares (<pkg>nlme</pkg>) and Bayesian estimates using MCMC (WinBUGS);
-<tt>HTMLtools()</tt> and <tt>tex()</tt>,
-respectively, output HTML and LaTeX report files of  population and individual estimates and
+<p>
+The <pkg>PKtools</pkg> package provides an interface for analysis of single dose population PK data to
+<pkg>nlme</pkg> (Pinheiro and Bates, 2000), NONMEM (Beal and Sheiner, 1989), and WinBUGS (Speigelhalter et al., 2001) 
+and returns objects of the classes "<code>PKNLME</code>", "<code>NONMEM</code>", and "<code>WinBUGS</code>", 
+respectively.  This interface facilitates the use of hybrid likelihood-based and Bayesian methods.
+Other PKtools functions include: <code>AICcomp()</code> which prints the AIC, AICc (small sample AIC) and 
+the log likelihood from NONMEM and NLME for each of a number of models; <code>paramEst()</code> and <code>indEst()</code> 
+which print the population and individual parameter estimates, respectively, based on maximum likelihood (NONMEM),
+generalized least squares (NLME) and Bayesian estimates using MCMC (WinBUGS); and <code>HTMLtools</code> and 
+<code>tex()</code>, respectively output HTML and Latex report files of  population and individual estimates and
 diagnostic plots for the users choice of estimation method. In addition, the diagnostic plots presented
 in the HTMLtools and tex files can be produced individually.
 </p>
 
 <p>
-Further packages that include tools for the analysis of pharmacokinetic data include
-<pkg>PK</pkg>, <pkg>PKfit</pkg>, and <pkg>drc</pkg>. Furthermore, the MASS package
-n the <pkg>VR</pkg> bundle contains a little basic methodology such as computing
-LD50s from logit/probit models with <tt>dose.p()</tt>.
+Graphic display is important in the analysis of pharmacokinetic data. The panel structure
+of the data is often well displayed using the <pkg>lattice</pkg> library of trellis plots.
+The <code>identify()</code> function reads the position of the pointer on the graph and can be 
+used to identify outlying data points in diagnostic plots.
 </p>
 
-<p>Graphic display is important in the analysis of pharmacokinetic data. The panel structure
-of the data is often well displayed using the <pkg>lattice</pkg> package of trellis plots.
-The identify function reads the position of the graphics pointer and can be used to identify
-outlining data points in diagnostic plots.
+<p> 
+The package <pkg>drc</pkg> deals with the related issue of fitting a dose response curve. 
+In this package the authors provide self starting functions for a number of model families
+including, the logisitic, Weibull and Cedergreen-Ritz-Streibig. Functions for estimation 
+<code>multdrc()</code>, and model comparison including, <code>compParm()</code>, <code>ED()</code>, 
+which respectively compare parameters, and effective dosage as well as, plot functions for the raw data, 
+<code>plotraw()</code>, and the fitted values,<code>plot()</code>, are provided. This package is discussed in 
+Ritz and Streibig (2005). Further, base R contains <pkg>glm</pkg> which can be used to analyze
+logit and probit models and the <code>MASS</code> package in the <pkg>VR</pkg> bundle contains some additional 
+related functions. The methodology is briefly discussed in Venables and Ripley (2002).
 </p>
 
-<p>This is a preliminary draft of this task view. Please let me know if I have omitted any
+<p>
+This is a early draft of this task view. Please let me know if I have omitted any
 important information by sending email to the
 <a href="mailto:sblanchard@coh.org?subject=Pharmacokinetics%20Task%20View">task view maintainer</a>.
+</p>
+
+<p>
+<big><b>References:</b></big>
+<br></br>
+<li>
+Beal, S.L.  and Sheiner, L.B. (1989). <i>NONMEM Users Guide - Part I</i>. NONMEM Project Group. UCSF. 
+</li>
+<li>
+Gibaldi, M. and Perrier, D. (1982). <i>Pharmacokinetics</i>, 2nd edition. Marcel Dekker, New York.
+</li>
+<li>
+Lindstrom, M.J. and Bates, D.M. (1990). Nonlinear Mixed Effects Models for Repeated Measures Data.
+<i>Biometrics,</i> 46,673-687.
+</li>
+<li>
+Lunn, D.J. and Best, N. and Thomas, A. and Wakefield, J. and Spiegelhalter, D. (2002). 
+Bayesian Analysis of Population PK/PD Models: General Concepts and Software.
+<i>Journal of Pharmacokinetics and Pharmacodynamics,</i> 29(3), 271-307.
+</li>
+<li>
+Pinheiro, J.C. and Bates, D.M. (2000). <i> Mixed-Effects Models in S and S-PLUS.</i> Springer-Verlag, New York.
+</li>
+<li>
+Ritz, C. and Streibig, J.C. (2005). Bioassay Analysis Using R. <i> Journal of Statistical Software </i> 12(5).
+URL <a href="http://www.jstatsoft.org/v12/i05/">http://www.jstatsoft.org/v12/i05/</a>.
+
+</li>
+<li>
+Spiegelhalter, D. and Thomas, A. and Best, N. and Lunn, D. (2001).
+<i> WinBUGS Version 1.4 User Manual. </i> Imperial College School of Medicine, London,
+</li>
+<li>
+Venables, W.N. and Ripley, B.D. (2002, 4th Edition). 
+<i> Modern Applied Statistics with S.</i> Springer-Verlag, New York.
+</li>
 </p>
 
 </info>
 
 <packagelist>
-  <pkg>drc</pkg>
-  <pkg priority="core">lattice</pkg>
-  <pkg priority="core">nlme</pkg>
-  <pkg>nlmeODE</pkg>
-  <pkg>odesolve</pkg>
-  <pkg priority="core">PKtools</pkg>
-  <pkg>PK</pkg>
-  <pkg>PKfit</pkg>
-  <pkg>VR</pkg>
+<pkg priority="core">lattice</pkg>
+<pkg priority="core">nlmeODE</pkg>
+<pkg priority="core">PKtools</pkg>
+<pkg priority="core">PK</pkg>
+<pkg priority="core">PKfit</pkg>
+<pkg>drc</pkg>
+<pkg>VR</pkg>
 </packagelist>
 
 <links>
-  <a href="http://www1.imperial.ac.uk/medicine/research/researchthemes/publicandint/eph/bugs/pkbugs.html" target="_top">PKBUGS</a>
-  <a href="http://www.mrc-bsu.cam.ac.uk/bugs/" target="_top">WinBUGS</a>
-  <a href="http://c255.ucsf.edu/" target="_top">NONMEM</a>
+<a href="http://www.mrc-bsu.cam.ac.uk/bugs/winbugs/pkbugs.shtml" target="_top">PKBUGS</a>
+<a href="http://www.mrc-bsu.cam.ac.uk/bugs/" target="_top">WinBUGS</a>
+<a href="http://www.globomax.net/products/" target="_top">NONMEM</a>
 </links>
 
 </CRANTaskView>
