@@ -106,7 +106,7 @@ important information by sending email to the
 
 <p>
 <big><b>References:</b></big>
-<br></br>
+<ul>
 <li>
 Beal, S.L.  and Sheiner, L.B. (1989). <i>NONMEM Users Guide - Part I</i>. NONMEM Project Group. UCSF. 
 </li>
@@ -128,7 +128,6 @@ Pinheiro, J.C. and Bates, D.M. (2000). <i> Mixed-Effects Models in S and S-PLUS.
 <li>
 Ritz, C. and Streibig, J.C. (2005). Bioassay Analysis Using R. <i> Journal of Statistical Software </i> 12(5).
 URL <a href="http://www.jstatsoft.org/v12/i05/">http://www.jstatsoft.org/v12/i05/</a>.
-
 </li>
 <li>
 Spiegelhalter, D. and Thomas, A. and Best, N. and Lunn, D. (2001).
@@ -138,6 +137,7 @@ Spiegelhalter, D. and Thomas, A. and Best, N. and Lunn, D. (2001).
 Venables, W.N. and Ripley, B.D. (2002, 4th Edition). 
 <i> Modern Applied Statistics with S.</i> Springer-Verlag, New York.
 </li>
+</ul>
 </p>
 
 </info>
