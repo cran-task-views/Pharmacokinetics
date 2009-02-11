@@ -104,8 +104,7 @@ important information by sending email to the
 <a href="mailto:sblanchard@coh.org?subject=Pharmacokinetics%20Task%20View">task view maintainer</a>.
 </p>
 
-<p>
-<big><b>References:</b></big>
+<p><big><b>References:</b></big></p>
 <ul>
 <li>
 Beal, S.L.  and Sheiner, L.B. (1989). <i>NONMEM Users Guide - Part I</i>. NONMEM Project Group. UCSF. 
@@ -138,7 +137,6 @@ Venables, W.N. and Ripley, B.D. (2002, 4th Edition).
 <i> Modern Applied Statistics with S.</i> Springer-Verlag, New York.
 </li>
 </ul>
-</p>
 
 </info>
 
