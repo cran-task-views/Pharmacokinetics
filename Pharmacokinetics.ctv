@@ -3,7 +3,7 @@
 <name>Pharmacokinetics</name>
 <topic>Analysis of Pharmacokinetic Data</topic>
 <maintainer email="sblanchard@coh.org">Suzette Blanchard</maintainer>
-<version>2008-04-17</version>
+<version>2009-10-28</version>
 
 <info>
 
@@ -19,7 +19,7 @@ the packages <pkg>PK</pkg>,<pkg>PKfit</pkg>, <pkg>nlmeODE</pkg> which incorporat
 <pkg>odesolve</pkg>, and the package <pkg>PKtools</pkg>. While <pkg>PK</pkg> provides basic pharmacokinetics 
 functions which implement non-compartmental analysis methods, the latter three packages focus on modeling 
 methods. In addition, this task view includes a discussion of a few related packages including the package 
-<pkg>lattice</pkg> for trellis graphics, and the package MASS from the bundle <pkg>VR</pkg> 
+<pkg>lattice</pkg> for trellis graphics, and the package <pkg>MASS</pkg> 
 and the package <pkg>drc</pkg> that aid in the analysis of dose response curves.  
 </p>
 
@@ -94,7 +94,7 @@ including, the logisitic, Weibull and Cedergreen-Ritz-Streibig. Functions for es
 which respectively compare parameters, and effective dosage as well as, plot functions for the raw data, 
 <code>plotraw()</code>, and the fitted values,<code>plot()</code>, are provided. This package is discussed in 
 Ritz and Streibig (2005). Further, base R contains <pkg>glm</pkg> which can be used to analyze
-logit and probit models and the <code>MASS</code> package in the <pkg>VR</pkg> bundle contains some additional 
+logit and probit models and the <pkg>MASS</pkg> package contains some additional 
 related functions. The methodology is briefly discussed in Venables and Ripley (2002).
 </p>
 
@@ -141,13 +141,13 @@ Venables, W.N. and Ripley, B.D. (2002, 4th Edition).
 </info>
 
 <packagelist>
-<pkg priority="core">lattice</pkg>
-<pkg priority="core">nlmeODE</pkg>
-<pkg priority="core">PKtools</pkg>
-<pkg priority="core">PK</pkg>
-<pkg priority="core">PKfit</pkg>
-<pkg>drc</pkg>
-<pkg>VR</pkg>
+  <pkg>drc</pkg>
+  <pkg priority="core">lattice</pkg>
+  <pkg>MASS</pkg>
+  <pkg priority="core">nlmeODE</pkg>
+  <pkg priority="core">PK</pkg>
+  <pkg priority="core">PKtools</pkg>
+  <pkg priority="core">PKfit</pkg>
 </packagelist>
 
 <links>
