@@ -93,7 +93,7 @@ including, the logisitic, Weibull and Cedergreen-Ritz-Streibig. Functions for es
 <code>multdrc()</code>, and model comparison including, <code>compParm()</code>, <code>ED()</code>, 
 which respectively compare parameters, and effective dosage as well as, plot functions for the raw data, 
 <code>plotraw()</code>, and the fitted values,<code>plot()</code>, are provided. This package is discussed in 
-Ritz and Streibig (2005). Further, base R contains <pkg>glm</pkg> which can be used to analyze
+Ritz and Streibig (2005). Further, base R contains <code>glm()</code> which can be used to analyze
 logit and probit models and the <pkg>MASS</pkg> package contains some additional 
 related functions. The methodology is briefly discussed in Venables and Ripley (2002).
 </p>
@@ -144,8 +144,11 @@ Venables, W.N. and Ripley, B.D. (2002, 4th Edition).
   <pkg>drc</pkg>
   <pkg priority="core">lattice</pkg>
   <pkg>MASS</pkg>
+  <pkg>nlme</pkg>
   <pkg priority="core">nlmeODE</pkg>
+  <pkg>odesolve</pkg>
   <pkg priority="core">PK</pkg>
+  <pkg>PKPDmodels</pkg>
   <pkg priority="core">PKtools</pkg>
   <pkg priority="core">PKfit</pkg>
 </packagelist>
