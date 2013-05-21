@@ -16,7 +16,7 @@ model. It returns an object of the class <code>"nls"</code> having methods <code
 <code>resid()</code>, <code>print()</code>, <code>summary()</code>, <code>AIC()</code>, <code>fitted()</code> and 
 <code>vcov()</code>.  Four packages are available in CRAN that directly aid in PK data analysis, including; 
 the packages <pkg>PK</pkg>,<pkg>PKfit</pkg>, <pkg>nlmeODE</pkg> which incorporates <pkg>nlme</pkg> and 
-<pkg>odesolve</pkg>, and the package <pkg>PKtools</pkg>. While <pkg>PK</pkg> provides basic pharmacokinetics 
+<pkg>deSolve</pkg>, and the package <pkg>PKtools</pkg>. While <pkg>PK</pkg> provides basic pharmacokinetics 
 functions which implement non-compartmental analysis methods, the latter three packages focus on modeling 
 methods. In addition, this task view includes a discussion of a few related packages including the package 
 <pkg>lattice</pkg> for trellis graphics, and the package <pkg>MASS</pkg> 
@@ -54,7 +54,7 @@ approach (Lindstrom and Bates, 1990) which allows for nested random effects. An 
 class <code>"nlme"</code> representing the nonlinear mixed-effects model fit is returned.
 The results can be output using the methods <code>print()</code>, <code>plot()</code>, 
 and <code>summary()</code>. The nlmeObject gives further details regarding the components of the 
-<code>"nlme"</code> object and how to extract them. The package <pkg>nlmeODE</pkg> incorporates the <pkg>odesolve</pkg>
+<code>"nlme"</code> object and how to extract them. The package <pkg>nlmeODE</pkg> incorporates the <pkg>deSolve</pkg>
 and <pkg>nlme</pkg> along with the library of PK/PD models, <pkg>PKPDmodels</pkg>. A discussion of the 
 analysis methods for population PK using <pkg>nlme</pkg> is provided in Pinheiro and Bates (2000). 
 </p>
@@ -141,12 +141,12 @@ Venables, W.N. and Ripley, B.D. (2002, 4th Edition).
 </info>
 
 <packagelist>
+  <pkg>deSolve</pkg>
   <pkg>drc</pkg>
   <pkg priority="core">lattice</pkg>
   <pkg>MASS</pkg>
   <pkg>nlme</pkg>
   <pkg priority="core">nlmeODE</pkg>
-  <pkg>odesolve</pkg>
   <pkg priority="core">PK</pkg>
   <pkg>PKPDmodels</pkg>
   <pkg priority="core">PKtools</pkg>
