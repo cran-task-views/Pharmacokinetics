@@ -154,9 +154,9 @@ Venables, W.N. and Ripley, B.D. (2002, 4th Edition).
 </packagelist>
 
 <links>
-<a href="http://www.mrc-bsu.cam.ac.uk/bugs/winbugs/pkbugs.shtml" target="_top">PKBUGS</a>
-<a href="http://www.mrc-bsu.cam.ac.uk/bugs/" target="_top">WinBUGS</a>
-<a href="http://www.globomax.net/products/" target="_top">NONMEM</a>
+<a href="http://www.mrc-bsu.cam.ac.uk/bugs/winbugs/pkbugs.shtml">PKBUGS</a>
+<a href="http://www.mrc-bsu.cam.ac.uk/bugs/">WinBUGS</a>
+<a href="http://www.globomax.net/products/">NONMEM</a>
 </links>
 
 </CRANTaskView>
