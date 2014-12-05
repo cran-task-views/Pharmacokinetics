@@ -3,7 +3,7 @@
 <name>Pharmacokinetics</name>
 <topic>Analysis of Pharmacokinetic Data</topic>
 <maintainer email="sblanchard@coh.org">Suzette Blanchard</maintainer>
-<version>2013-05-21</version>
+<version>2014-12-05</version>
 
 <info>
 
@@ -16,7 +16,7 @@ model. It returns an object of the class <code>"nls"</code> having methods <code
 <code>resid()</code>, <code>print()</code>, <code>summary()</code>, <code>AIC()</code>, <code>fitted()</code> and 
 <code>vcov()</code>.  Four packages are available in CRAN that directly aid in PK data analysis, including; 
 the packages <pkg>PK</pkg>,<pkg>PKfit</pkg>, <pkg>nlmeODE</pkg> which incorporates <pkg>nlme</pkg> and 
-<pkg>deSolve</pkg>, and the package <pkg>PKtools</pkg>. While <pkg>PK</pkg> provides basic pharmacokinetics 
+<pkg>deSolve</pkg>. While <pkg>PK</pkg> provides basic pharmacokinetics 
 functions which implement non-compartmental analysis methods, the latter three packages focus on modeling 
 methods. In addition, this task view includes a discussion of a few related packages including the package 
 <pkg>lattice</pkg> for trellis graphics, and the package <pkg>MASS</pkg> 
@@ -63,20 +63,6 @@ analysis methods for population PK using <pkg>nlme</pkg> is provided in Pinheiro
 Bayesian estimation methods for panel data are also available. These methods have been described 
 in the CRAN task view for <view>Bayesian</view> Inference.  Bayesian analysis methods for 
 population PK data are described in Lunn et al.(2002). 
-</p>
-
-<p>
-The <pkg>PKtools</pkg> package provides an interface for analysis of single dose population PK data to
-<pkg>nlme</pkg> (Pinheiro and Bates, 2000), NONMEM (Beal and Sheiner, 1989), and WinBUGS (Speigelhalter et al., 2001) 
-and returns objects of the classes <code>"PKNLME"</code>, <code>"NONMEM"</code>, and <code>"WinBUGS"</code>, 
-respectively.  This interface facilitates the use of hybrid likelihood-based and Bayesian methods.
-Other PKtools functions include: <code>AICcomp()</code> which prints the AIC, AICc (small sample AIC) and 
-the log likelihood from NONMEM and NLME for each of a number of models; <code>paramEst()</code> and <code>indEst()</code> 
-which print the population and individual parameter estimates, respectively, based on maximum likelihood (NONMEM),
-generalized least squares (NLME) and Bayesian estimates using MCMC (WinBUGS); and <code>HTMLtools</code> and 
-<code>tex()</code>, respectively output HTML and Latex report files of  population and individual estimates and
-diagnostic plots for the users choice of estimation method. In addition, the diagnostic plots presented
-in the HTMLtools and tex files can be produced individually.
 </p>
 
 <p>
@@ -149,7 +135,6 @@ Venables, W.N. and Ripley, B.D. (2002, 4th Edition).
   <pkg priority="core">nlmeODE</pkg>
   <pkg priority="core">PK</pkg>
   <pkg>PKPDmodels</pkg>
-  <pkg priority="core">PKtools</pkg>
   <pkg priority="core">PKfit</pkg>
 </packagelist>
 
