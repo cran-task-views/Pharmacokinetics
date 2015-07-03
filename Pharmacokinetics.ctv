@@ -3,7 +3,7 @@
 <name>Pharmacokinetics</name>
 <topic>Analysis of Pharmacokinetic Data</topic>
 <maintainer email="sblanchard@coh.org">Suzette Blanchard</maintainer>
-<version>2014-12-05</version>
+<version>2015-07-03</version>
 
 <info>
 
@@ -15,7 +15,7 @@ which can be used to calculate nonlinear least-squares estimates of the paramete
 model. It returns an object of the class <code>"nls"</code> having methods <code>coef()</code>, <code>formula()</code>, 
 <code>resid()</code>, <code>print()</code>, <code>summary()</code>, <code>AIC()</code>, <code>fitted()</code> and 
 <code>vcov()</code>.  Four packages are available in CRAN that directly aid in PK data analysis, including; 
-the packages <pkg>PK</pkg>,<pkg>PKfit</pkg>, <pkg>nlmeODE</pkg> which incorporates <pkg>nlme</pkg> and 
+the packages <pkg>PK</pkg>, <pkg>nlmeODE</pkg> which incorporates <pkg>nlme</pkg>, and 
 <pkg>deSolve</pkg>. While <pkg>PK</pkg> provides basic pharmacokinetics 
 functions which implement non-compartmental analysis methods, the latter three packages focus on modeling 
 methods. In addition, this task view includes a discussion of a few related packages including the package 
@@ -30,13 +30,6 @@ under the curve, and the area under the first moment curve and two new functions
 estimating and comparing AUCs in the case of serial sampling. It also includes functions for half-life estimation 
 for a biexponential model, <code>biexp()</code>, and a two phase linear regression, <code>lee()</code> 
 as well as an associated plot function, <code>plot.halflife()</code>.
-</p>
-
-<p>
-The package <pkg>PKfit</pkg> is a nonlinear regression program designed for the analysis of pharmacokinetic 
-data. This package includes fitting and simulation functions for a large list of PK models including both 
-compartment models and other nonlinear models with iv, bolus, extravascular, and oral single dose absorption, 
-with and without a lag.
 </p>
 
 <p>
@@ -135,7 +128,6 @@ Venables, W.N. and Ripley, B.D. (2002, 4th Edition).
   <pkg priority="core">nlmeODE</pkg>
   <pkg priority="core">PK</pkg>
   <pkg>PKPDmodels</pkg>
-  <pkg priority="core">PKfit</pkg>
 </packagelist>
 
 <links>
