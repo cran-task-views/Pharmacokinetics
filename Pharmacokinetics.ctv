@@ -4,7 +4,7 @@
 <name>Pharmacokinetics</name>
 <topic>Analysis of Pharmacokinetic Data</topic>
 <maintainer email="wdenney@humanpredictions.com">Bill Denney</maintainer>
-<version>2017-12-18</version>
+<version>2018-05-04</version>
 
 <info>      
 
@@ -22,7 +22,6 @@ many samples per subject on the same and sequential days.
 
 The NCA packages are:
 <dl>
-  <dt><pkg>ncappc</pkg></dt><dd>Performs traditional NCA and simulation-based posterior predictive checks for a population PK model using NCA metrics.  It targets summarizing data from model-fit or simulated sources.</dd>
   <dt><pkg>NonCompart</pkg></dt><dd>Provides basic computational functions for NCA.</dd>
   <dt><pkg>PK</pkg></dt><dd>Allows estimation of pharmacokinetic parameters using non-compartmental theory. Both complete sampling and sparse sampling designs are implemented. The package provides methods for hypothesis testing and confidence intervals related to superiority and equivalence.</dd>
 </dl>
@@ -63,7 +62,6 @@ which are important for reporting PK data are:
 <pck>cpk</pck>
 <pck>dfpk</pck>
 <pck>mrgsolve</pck>
-<pck>ncappc</pck>
 <pck>ncar</pck>
 <pck>nmw</pck>
 <pck>NonCompart</pck>
