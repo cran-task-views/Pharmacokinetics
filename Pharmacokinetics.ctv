@@ -4,7 +4,7 @@
 <name>Pharmacokinetics</name>
 <topic>Analysis of Pharmacokinetic Data</topic>
 <maintainer email="wdenney@humanpredictions.com">Bill Denney</maintainer>
-<version>2018-05-04</version>
+<version>2018-06-11</version>
 
 <info>      
 
@@ -41,7 +41,6 @@ The PK modeling and simulation packages are:
   <dt><pkg>nmw</pkg></dt><dd>Is a package to understand the algorithms of NONMEM.</dd>
   <dt><pkg>PKgraph</pkg></dt><dd>Provides a graphical user interface for population pharmacokinetic model diagnosis from a variety of modeling fitting software, including NONMEM, Monolix, SAS, and R.</dd>
   <dt><pkg>PKPDmodels</pkg></dt><dd>Provides functions to evaluate common pharmacokinetic/pharmacodynamic models and their gradients.</dd>
-  <dt><pkg>RxODE</pkg></dt><dd>RxODE is an R package that facilitates simulation with ODE models in R. It is designed with pharmacometrics models in mind, but can be applied more generally to any ODE model.</dd>
   <dt><pkg>scaRabee</pkg></dt><dd>Provides a framework for simulation and optimization of pharmacokinetic-pharmacodynamic models at the individual and population level.</dd>
 </dl>
 
@@ -70,7 +69,6 @@ which are important for reporting PK data are:
 <pck>PKPDmodels</pck>
 <pck>pkr</pck>
 <pck>PKreport</pck>
-<pck>RxODE</pck>
 <pck>scaRabee</pck>
 </packagelist>
 
