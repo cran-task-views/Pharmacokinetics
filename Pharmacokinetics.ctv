@@ -4,7 +4,7 @@
 <name>Pharmacokinetics</name>
 <topic>Analysis of Pharmacokinetic Data</topic>
 <maintainer email="wdenney@humanpredictions.com">Bill Denney</maintainer>
-<version>2019-05-15</version>
+<version>2019-07-02</version>
 
 <info>      
 
@@ -38,7 +38,6 @@ The PK modeling and simulation packages are:
   <dt><pkg>cpk</pkg></dt><dd>Provides simplified clinical pharmacokinetic functions for dose regimen design and modification at the point-of-care.</dd>
   <dt><pkg>dfpk</pkg></dt><dd>Provides statistical methods involving PK measures for dose finding in Phase 1 clinical trials.</dd>
   <dt><pkg>mrgsolve</pkg></dt><dd>Facilitates simulation from hierarchical, ordinary differential equation (ODE) based models typically employed in drug development.</dd>
-  <dt><pkg>nlmixr</pkg></dt><dd>Fits and compare nonlinear mixed-effects models in differential equations with flexible dosing information commonly seen in pharmacokinetics and pharmacodynamics.</dd>
   <dt><pkg>nmw</pkg></dt><dd>Is a package to understand the algorithms of NONMEM.</dd>
   <dt><pkg>PKgraph</pkg></dt><dd>Provides a graphical user interface for population pharmacokinetic model diagnosis from a variety of modeling fitting software, including NONMEM, Monolix, SAS, and R.</dd>
   <dt><pkg>PKPDmodels</pkg></dt><dd>Provides functions to evaluate common pharmacokinetic/pharmacodynamic models and their gradients.</dd>
@@ -64,7 +63,6 @@ which are important for reporting PK data are:
 <pck>dfpk</pck>
 <pck>mrgsolve</pck>
 <pck>ncar</pck>
-<pck>nlmixr</pck>
 <pck>nmw</pck>
 <pck>NonCompart</pck>
 <pck>PK</pck>
