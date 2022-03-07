@@ -1,4 +1,4 @@
-## CRAN Task View: Econometrics
+## CRAN Task View: Pharmacokinetics
 
 **URL:** <https://CRAN.R-project.org/view=Pharmacokinetics>
   
