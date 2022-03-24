@@ -15,8 +15,8 @@ noncompartmental analysis (NCA), modeling (typically using compartmental
 analysis), and reporting (typically for NCA).
 
 Pharmacokinetics are often collected during clinical trials of new drugs.  For
-more information on R packages for clinical trials, see `r
-view("ClinicalTrials")`.
+more information on R packages for clinical trials, see
+`r view("ClinicalTrials")`.
 
 # Noncompartmental Analysis (NCA)
 
