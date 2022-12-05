@@ -3,7 +3,7 @@ name: Pharmacokinetics
 topic: Analysis of Pharmacokinetic Data
 maintainer: Bill Denney
 email: wdenney@humanpredictions.com
-version: 2021-12-29
+version: 2022-12-05
 source: https://github.com/cran-task-views/Pharmacokinetics/
 ---
 
@@ -92,8 +92,9 @@ Generate Concentration-Time Profiles from Linear PK Systems
 Facilitates simulation from hierarchical, ordinary differential
 equation (ODE) based models typically employed in drug development.
 
-`r pkg("nlmixr")`:
-Nonlinear Mixed Effects Models in Population PK/PD
+`r pkg("nlmixr2")`:
+Nonlinear Mixed Effects Models in Population PK/PD (superseding the `nlmixr`
+package)
 
 `r pkg("nmw")`:
 Is a package to understand the algorithms of NONMEM.
@@ -153,8 +154,9 @@ Diagnostics for non-linear mixed-effects (population) models from
 run summary and provide 'ggplot2'-based graphics for data
 exploration and model diagnostics.
 
-`r pkg("xpose.nlmixr")`:
-Graphical Diagnostics for Pharmacometric Models: Extension to 'nlmixr'
+`r pkg("xpose.nlmixr2")`:
+Graphical Diagnostics for Pharmacometric Models: Extension to 'nlmixr2'
+(superseding the `xpose.nlmixr` package)
 
 # Datasets or Single Models
 
