@@ -144,12 +144,6 @@ Provides NCA for a report writer generating rtf and pdf output.
 Generates NCA data sets compliant to CDISC and other pharmacokinetic
 functions for reviewer.
 
-`r pkg("PKreport")`:
-Provides automatic pipeline for users to visualize data and models
-with an archive-oriented management tool for users to store,
-retrieve and modify figures and graph generation based on lattice
-and ggplot2.
-
 `r pkg("xpose")`:
 Diagnostics for non-linear mixed-effects (population) models from
 'NONMEM'. 'xpose' facilitates data import, creation of numerical
@@ -159,6 +153,14 @@ exploration and model diagnostics.
 `r pkg("xpose.nlmixr2")`:
 Graphical Diagnostics for Pharmacometric Models: Extension to 'nlmixr2'
 (superseding the `xpose.nlmixr` package)
+
+## Archived Pharmacokinetics Reporting
+
+[PKreport](https://cran.r-project.org/web/packages/PKreport/index.html):
+Provided automatic pipeline for users to visualize data and models
+with an archive-oriented management tool for users to store,
+retrieve and modify figures and graph generation based on lattice
+and ggplot2.
 
 # Datasets or Single Models
 
