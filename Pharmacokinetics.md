@@ -105,10 +105,6 @@ The Parameter Converter of the Pharmacokinetic Models
 `r pkg("pkdata")`:
 Creates Pharmacokinetic/Pharmacodynamic (PK/PD) Data
 
-`r pkg("PKPDmodels")`:
-Provides functions to evaluate common
-pharmacokinetic/pharmacodynamic models and their gradients.
-
 `r pkg("pmxTools")`:
 Pharmacometric tools for common data analytical tasks; closed-form
 solutions for calculating concentrations at given times after dosing
@@ -127,6 +123,12 @@ Dose-Finding Methods for Non-Binary Outcomes
 
 `r pkg("wnl")`:
 Minimization Tool for Pharmacokinetic-Pharmacodynamic Data Analysis
+
+## Archived Pharmacometric Modeling
+
+[PKPDmodels](https://cran.r-project.org/web/packages/PKPDmodels/index.html):
+Provided functions to evaluate common pharmacokinetic/pharmacodynamic models and
+their gradients.
 
 # Pharmacokinetics Reporting
 
