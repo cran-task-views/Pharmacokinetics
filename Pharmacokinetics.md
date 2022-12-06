@@ -18,6 +18,13 @@ Pharmacokinetics are often collected during clinical trials of new drugs.  For
 more information on R packages for clinical trials, see
 `r view("ClinicalTrials")`.
 
+# Call for a co-maintainer
+
+CRAN task views hopes that all task views will have multiple maintainers from
+diverse backgrounds.  If you are interested in becoming a co-maintainer of this
+task view, please contact the current maintainer (listed at the top of the task
+view).
+
 # Noncompartmental Analysis (NCA)
 
 NCA is used as method of description of PK with minimal assumptions of the rates
