@@ -184,10 +184,12 @@ from the article of Barnett and others, in the default
 pharmacokinetic model used and the parameterization of variability
 among animals.
 
-`r pkg("PharmPow")`:
-PharmPow contains functions performing power calculations for mixed
-(sparse/dense sampled) pharmacokinetic study designs. The input data
-for these functions is tailored for NONMEM .phi files.
+## Archived Study Design Packages
+
+[PharmPow](https://cran.r-project.org/web/packages/PharmPow/index.html):
+PharmPow was a package containing functions performing power calculations for
+mixed (sparse/dense sampled) pharmacokinetic study designs. The input data for
+these functions is tailored for NONMEM .phi files.
 
 
 ### Links
