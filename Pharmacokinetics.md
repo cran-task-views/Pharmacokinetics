@@ -182,6 +182,15 @@ Bae (2015)
 
 Packages related to PK study design include:
 
+`r pkg("dfpk")`:
+Statistical methods involving PK measures are provided, in the dose allocation
+process during a Phase I clinical trials. These methods, proposed by Ursino et
+al, (2017) <doi:10.1002/bimj.201600084>, enter pharmacokinetics (PK) in the dose
+finding designs in different ways, including covariates models, dependent
+variable or hierarchical models. This package provides functions to generate
+data from several scenarios and functions to run simulations which their
+objective is to determine the maximum tolerated dose (MTD).
+
 `r pkg("microsamplingDesign")`:
 Find optimal microsampling designs for non-compartmental
 pharacokinetic analysis using a general simulation methodology. This
