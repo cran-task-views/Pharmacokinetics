@@ -99,6 +99,10 @@ Generate Concentration-Time Profiles from Linear PK Systems
 Facilitates simulation from hierarchical, ordinary differential
 equation (ODE) based models typically employed in drug development.
 
+`r pkg("rxode2")`: Methods for simulation from drug development  hierarchical ordinary 
+differential equations (ODE). This is the basis of the `r pkg("nlmixr2")` package and 
+superseds the `RxODE` package.
+
 `r pkg("nlmixr2")`:
 Nonlinear Mixed Effects Models in Population PK/PD (superseding the `nlmixr`
 package)
@@ -161,6 +165,9 @@ exploration and model diagnostics.
 Graphical Diagnostics for Pharmacometric Models: Extension to 'nlmixr2'
 (superseding the `xpose.nlmixr` package)
 
+`r pkg("nlmixr2rpt")`: Provides automatic reporting of `nlmixr2` models as
+word documents and powerpoint documents.
+
 ## Archived Pharmacokinetics Reporting
 
 [PKreport](https://cran.r-project.org/web/packages/PKreport/index.html):
@@ -203,6 +210,9 @@ scheme performance on simulated data. The default settings differ
 from the article of Barnett and others, in the default
 pharmacokinetic model used and the parameterization of variability
 among animals.
+
+`r pkg("PopED")`:  computes optimal experimental designs for both 
+population and individual studies based on nonlinear mixed-effect models.
 
 ## Archived Study Design Packages
 
