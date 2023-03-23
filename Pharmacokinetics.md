@@ -66,9 +66,6 @@ below are restricted to packages that have specific interest to PK
 modeling and not the (many) packages that support modeling that could be
 used for PK data. The PK modeling and simulation packages are:
 
-`r pkg("assemblerr")`:
-Assembly of Pharmacometric Models
-
 `r pkg("bayesnec")`:
 A Bayesian No-Effect- Concentration (NEC) Algorithm
 
