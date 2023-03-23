@@ -82,6 +82,15 @@ function.
 Provides simplified clinical pharmacokinetic functions for dose
 regimen design and modification at the point-of-care.
 
+`r pkg("clinDR")`:
+Bayesian and ML Emax model fitting, graphics and simulation for clinical dose
+response.
+
+`r pkg("clustDRM")`:
+Functions to identify the pattern of a dose-response curve. Then fit a set of
+appropriate models to it according to the identified pattern, followed by model
+averaging to estimate the effective dose.
+
 `r pkg("dfpk")`:
 Provides statistical methods involving PK measures for dose finding
 in Phase 1 clinical trials.
@@ -96,9 +105,14 @@ Generate Concentration-Time Profiles from Linear PK Systems
 Facilitates simulation from hierarchical, ordinary differential
 equation (ODE) based models typically employed in drug development.
 
-`r pkg("rxode2")`: Methods for simulation from drug development  hierarchical ordinary 
-differential equations (ODE). This is the basis of the `r pkg("nlmixr2")` package and 
-superseds the `RxODE` package.
+`r pkg("nonmemica")`:
+Systematically creates and modifies NONMEM(R) control streams. Harvests NONMEM
+output, builds run logs, creates derivative data, generates diagnostics.
+
+`r pkg("rxode2")`:
+Methods for simulation from drug development  hierarchical ordinary differential
+equations (ODE). This is the basis of the `r pkg("nlmixr2")` package and
+supersedes the `RxODE` package.
 
 `r pkg("nlmixr2")`:
 Nonlinear Mixed Effects Models in Population PK/PD (superseding the `nlmixr`
@@ -131,6 +145,18 @@ Dose-Finding Methods for Non-Binary Outcomes
 
 `r pkg("wnl")`:
 Minimization Tool for Pharmacokinetic-Pharmacodynamic Data Analysis
+
+# Visualization
+
+`r pkg("nlmeVPC")`:
+Various visual and numerical diagnosis methods for the nonlinear mixed effect
+model, including visual predictive checks, numerical predictive checks, and
+coverage plots.
+
+`r pkg("xpose4")`:
+A model building aid for nonlinear mixed-effects (population) model analysis
+using NONMEM, facilitating data set checkout, exploration and visualization,
+model diagnostics, candidate covariate identification and model comparison.
 
 # Pharmacokinetics Reporting
 
@@ -171,6 +197,11 @@ Bae (2015)
 # Study Design
 
 Packages related to PK study design include:
+
+`r pkg("BE")`:
+Analyze bioequivalence study data with industrial strength. Sample size could be
+determined for various crossover designs, such as 2x2 design, 2x4 design, 4x4
+design, Balaam design, Two-sequence dual design, and William design.
 
 `r pkg("dfpk")`:
 Statistical methods involving PK measures are provided, in the dose allocation
