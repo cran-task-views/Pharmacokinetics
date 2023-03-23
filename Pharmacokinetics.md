@@ -132,12 +132,6 @@ Dose-Finding Methods for Non-Binary Outcomes
 `r pkg("wnl")`:
 Minimization Tool for Pharmacokinetic-Pharmacodynamic Data Analysis
 
-## Archived Pharmacometric Modeling
-
-[PKPDmodels](https://cran.r-project.org/web/packages/PKPDmodels/index.html):
-Provided functions to evaluate common pharmacokinetic/pharmacodynamic models and
-their gradients.
-
 # Pharmacokinetics Reporting
 
 Communication of results is as important (or more important) than
@@ -164,14 +158,6 @@ Graphical Diagnostics for Pharmacometric Models: Extension to 'nlmixr2'
 
 `r pkg("nlmixr2rpt")`: Provides automatic reporting of `nlmixr2` models as
 word documents and powerpoint documents.
-
-## Archived Pharmacokinetics Reporting
-
-[PKreport](https://cran.r-project.org/web/packages/PKreport/index.html):
-Provided automatic pipeline for users to visualize data and models
-with an archive-oriented management tool for users to store,
-retrieve and modify figures and graph generation based on lattice
-and ggplot2.
 
 # Datasets or Single Models
 
@@ -210,14 +196,6 @@ among animals.
 
 `r pkg("PopED")`:  computes optimal experimental designs for both 
 population and individual studies based on nonlinear mixed-effect models.
-
-## Archived Study Design Packages
-
-[PharmPow](https://cran.r-project.org/web/packages/PharmPow/index.html):
-PharmPow was a package containing functions performing power calculations for
-mixed (sparse/dense sampled) pharmacokinetic study designs. The input data for
-these functions is tailored for NONMEM .phi files.
-
 
 ### Links
 -   [PKBugs](https://www.mrc-bsu.cam.ac.uk/software/bugs/the-bugs-project-pkbugs/)
