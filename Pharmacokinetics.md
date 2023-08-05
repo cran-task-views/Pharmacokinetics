@@ -91,10 +91,6 @@ Functions to identify the pattern of a dose-response curve. Then fit a set of
 appropriate models to it according to the identified pattern, followed by model
 averaging to estimate the effective dose.
 
-`r pkg("dfpk")`:
-Provides statistical methods involving PK measures for dose finding
-in Phase 1 clinical trials.
-
 `r pkg("dr4pl")`:
 Dose Response Data Analysis using the 4 Parameter Logistic (4pl) Model
 
