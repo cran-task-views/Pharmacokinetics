@@ -78,10 +78,6 @@ parameters. Where possible and relevant, it provides multiple
 published and peer-reviewed equations within the respective R
 function.
 
-`r pkg("cpk")`:
-Provides simplified clinical pharmacokinetic functions for dose
-regimen design and modification at the point-of-care.
-
 `r pkg("clinDR")`:
 Bayesian and ML Emax model fitting, graphics and simulation for clinical dose
 response.
