@@ -110,7 +110,7 @@ Generate Concentration-Time Profiles from Linear PK Systems
 Facilitates simulation from hierarchical, ordinary differential
 equation (ODE) based models typically employed in drug development.
 
-`r pkg("pharmpy")`:
+`r pkg("pharmr")`:
 Interfaces to the `pharmpy` library for pharmacometric modeling.
 
 `r pkg("PKPDsim")`:
