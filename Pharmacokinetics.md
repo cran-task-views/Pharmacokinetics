@@ -95,11 +95,6 @@ function.
 Bayesian and ML Emax model fitting, graphics and simulation for clinical dose
 response.
 
-`r pkg("clustDRM")`:
-Functions to identify the pattern of a dose-response curve. Then fit a set of
-appropriate models to it according to the identified pattern, followed by model
-averaging to estimate the effective dose.
-
 `r pkg("dr4pl")`:
 Dose Response Data Analysis using the 4 Parameter Logistic (4pl) Model
 
