@@ -3,7 +3,7 @@ name: Pharmacokinetics
 topic: Analysis of Pharmacokinetic Data
 maintainer: Bill Denney
 email: wdenney@humanpredictions.com
-version: 2022-12-05
+version: 2024-08-22
 source: https://github.com/cran-task-views/Pharmacokinetics/
 ---
 
@@ -291,19 +291,6 @@ Packages related to PK study design include:
 Analyze bioequivalence study data with industrial strength. Sample size could be
 determined for various crossover designs, such as 2x2 design, 2x4 design, 4x4
 design, Balaam design, Two-sequence dual design, and William design.
-
-`r pkg("microsamplingDesign")`:
-Find optimal microsampling designs for non-compartmental
-pharacokinetic analysis using a general simulation methodology. This
-methodology consist of (1) specifying a pharmacokinetic model
-including variability among animals; (2) generating possible
-sampling times; (3) evaluating performance of each time point choice
-on simulated data; (4) generating possible schemes given a time
-point choice and additional constraints and finally (5) evaluating
-scheme performance on simulated data. The default settings differ
-from the article of Barnett and others, in the default
-pharmacokinetic model used and the parameterization of variability
-among animals.
 
 `r pkg("PopED")`:
 `PopED` computes optimal experimental designs for both population and individual
