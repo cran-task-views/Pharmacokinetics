@@ -154,7 +154,7 @@ It is built on top of the neldermead package, which provides the direct search
 algorithm proposed by Nelder and Mead for model optimization.
 
 `r pkg("ubiquity")`:
-PKPD, PBPK, and Systems Pharmacology Modeling Tools.  It is a omplete work flow
+PKPD, PBPK, and Systems Pharmacology Modeling Tools.  It is a complete work flow
 for the analysis of pharmacokinetic pharmacodynamic (PKPD),
 physiologically-based pharmacokinetic (PBPK) and systems pharmacology models
 including: creation of ordinary differential equation-based models, pooled
