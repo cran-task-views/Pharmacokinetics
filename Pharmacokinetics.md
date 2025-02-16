@@ -117,6 +117,17 @@ This is a set of minimization tools (maximum likelihood estimation and least squ
 
 The NONMEM package is often used for pharmacometric modeling.  Several packages are specifically available to support NONMEM-related modeling.  Packages that work with NONMEM but also work with other modeling software are described in the general modeling section above.
 
+`r pkg("NMdata")`:
+NMdata: Preparation, Checking and Post-Processing Data for PK/PD Modeling
+
+Efficient tools for preparation, checking and post-processing of data in PK/PD (pharmacokinetics/pharmacodynamics) modeling, with focus on use of Nonmem. Attention is paid to ensure consistency, traceability, and Nonmem compatibility of Data. Rigorously checks final Nonmem datasets. Implemented in 'data.table', but easily integrated with 'base'
+and 'tidyverse'.
+
+`r pkg("NMsim")`:
+NMsim: Seamless 'Nonmem' Simulation Platform
+
+A complete and seamless 'Nonmem' simulation interface within R. Turns 'Nonmem' control streams into simulation control streams, executes them with specified simulation input data and returns the results. The simulation is performed by 'Nonmem', eliminating manual work and risks of re-implementation of models in other tools.
+
 `r pkg("nonmem2R")`:
 Loading NONMEM (NONlinear Mixed-Effect Modeling, <https://www.iconplc.com/solutions/technologies/nonmem/>) and PSN (Perl-speaks-NONMEM, <https://uupharmacometrics.github.io/PsN/>) output files to extract parameter estimates, provide visual predictive check (VPC) and goodness of fit (GOF) plots, and simulate with parameter uncertainty.
 
