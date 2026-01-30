@@ -3,7 +3,7 @@ name: Pharmacokinetics
 topic: Analysis of Pharmacokinetic Data
 maintainer: Bill Denney, Satyaprakash Nayak
 email: wdenney@humanpredictions.com, sn248@cornell.edu
-version: 2024-11-04
+version: 2026-01-30
 source: https://github.com/cran-task-views/Pharmacokinetics/
 ---
 
@@ -43,6 +43,20 @@ Compute standard Non-Compartmental Analysis (NCA) parameters for typical pharmac
 
 `r pkg("qpNCA")`:
 Computes noncompartmental pharmacokinetic parameters for drug concentration profiles. For each profile, data imputations and adjustments are made as necessary and basic parameters are estimated. Supports single dose, multi-dose, and multi-subject data. Supports steady-state calculations and various routes of drug administration. See ?qpNCA and vignettes. Methodology follows Rowland and Tozer (2011, ISBN:978-0-683-07404-8), Gabrielsson and Weiner (1997, ISBN:978-91-9765-100-4), and Gibaldi and Perrier (1982, ISBN:978-0824710422).
+
+# Bioequivalence powering and analysis
+
+`r pkg("BE")`:
+Analyze bioequivalence study data with industrial strength. Sample size could be determined for various crossover designs, such as 2x2 design, 2x4 design, 4x4 design, Balaam design, Two-sequence dual design, and William design. Reference: Chow SC, Liu JP. Design and Analysis of Bioavailability and Bioequivalence Studies. 3rd ed. (2009, ISBN:978-1-58488-668-6).
+
+`r pkg("BElikelihood")`:
+A likelihood method is implemented to present evidence for evaluating bioequivalence (BE). The functions use bioequivalence data [area under the blood concentration-time curve (AUC) and peak concentration (Cmax)] from various crossover designs commonly used in BE studies including a fully replicated, a partially replicated design, and a conventional 2x2 crossover design. They will calculate the profile likelihoods for the mean difference, total standard deviation ratio, and within subject standard deviation ratio for a test and a reference drug. A plot of a standardized profile likelihood can be generated along with the maximum likelihood estimate and likelihood intervals, which present evidence for bioequivalence. See Liping Du and Leena Choi (2015) <doi:10.1002/pst.1661>.
+
+`r pkg("Power2Stage)`:
+Contains functions to obtain the operational characteristics of bioequivalence studies in Two-Stage Designs (TSD) via simulations.
+
+`r pkg("replicateBE")`:
+Performs comparative bioavailability calculations for Average Bioequivalence with Expanding Limits (ABEL). Implemented are 'Method A' / 'Method B' and the detection of outliers. If the design allows, assessment of the empiric Type I Error and iteratively adjusting alpha to control the consumer risk. Average Bioequivalence - optionally with a tighter (narrow therapeutic index drugs) or wider acceptance range (South Africa: Cmax) - is implemented as well.
 
 # Workflow tools
 
@@ -176,7 +190,7 @@ Diagnostics for non-linear mixed-effects (population) models from 'NONMEM' <http
 `r pkg("xpose.nlmixr2")`:
 Extension to 'xpose' to support 'nlmixr2'. Provides functions to import 'nlmixr2' fit data into an 'xpose' data object, allowing the use of 'xpose' for 'nlmixr2' model diagnostics.
 
-`r pkg("nlmixr2rpt")`: 
+`r pkg("nlmixr2rpt")`:
 This allows you to generate reporting workflows around 'nlmixr2' analyses with outputs in Word and PowerPoint. You can specify figures, tables and report structure in a user-definable 'YAML' file. Also you can use the internal functions to access the figures and tables to allow their including in other outputs (e.g. R Markdown).
 
 # Datasets or Single Models
@@ -189,9 +203,6 @@ Simulate plasma caffeine concentrations using population pharmacokinetic model d
 # Study Design
 
 Packages related to PK study design include:
-
-`r pkg("BE")`:
-Analyze bioequivalence study data with industrial strength. Sample size could be determined for various crossover designs, such as 2x2 design, 2x4 design, 4x4 design, Balaam design, Two-sequence dual design, and William design. Reference: Chow SC, Liu JP. Design and Analysis of Bioavailability and Bioequivalence Studies. 3rd ed. (2009, ISBN:978-1-58488-668-6).
 
 `r pkg("PopED")`:
 Optimal experimental designs for both population and individual studies based on nonlinear mixed-effect models. Often this is based on a computation of the Fisher Information Matrix. This package was developed for pharmacometric problems, and examples and predefined models are available for these types of systems. The methods are described in Nyberg et al. (2012) <doi:10.1016/j.cmpb.2012.05.005>, and Foracchia et al. (2004) <doi:10.1016/S0169-2607(03)00073-7>.
