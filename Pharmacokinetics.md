@@ -52,7 +52,7 @@ Analyze bioequivalence study data with industrial strength. Sample size could be
 `r pkg("BElikelihood")`:
 A likelihood method is implemented to present evidence for evaluating bioequivalence (BE). The functions use bioequivalence data [area under the blood concentration-time curve (AUC) and peak concentration (Cmax)] from various crossover designs commonly used in BE studies including a fully replicated, a partially replicated design, and a conventional 2x2 crossover design. They will calculate the profile likelihoods for the mean difference, total standard deviation ratio, and within subject standard deviation ratio for a test and a reference drug. A plot of a standardized profile likelihood can be generated along with the maximum likelihood estimate and likelihood intervals, which present evidence for bioequivalence. See Liping Du and Leena Choi (2015) <doi:10.1002/pst.1661>.
 
-`r pkg("Power2Stage)`:
+`r pkg("Power2Stage")`:
 Contains functions to obtain the operational characteristics of bioequivalence studies in Two-Stage Designs (TSD) via simulations.
 
 `r pkg("replicateBE")`:
